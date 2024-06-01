@@ -1,0 +1,99 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Flower Shop</title>
+    <link rel="stylesheet" href="events.css"> 
+    <link rel="stylesheet" href="nav/nav.css">
+</head>
+<body>
+  <div>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+              width="26">
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+            </svg></a></li>
+        <!-- <li><a href="#home">Home</a></li> -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">LOTUS</a></li>
+        <!-- <li class="hideOnMobile"><a href="#home">Home</a></li> -->
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="events.html">Events</a></li>
+         <li class="hideOnMobile"><a href="galery.html">Gallery</a></li>
+
+        <li class="hideOnMobile"><a href="login.html">Login</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+              viewBox="0 96 960 960" width="26">
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+            </svg></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <section class="events-section">
+      <h1 class="eventtite"> Upcoming Events</h1>
+      <hr>
+      <div class="event" onclick="toggleDetails(this)">
+        <img src="image/fl5.jpg" alt="Event 1" class="event-image">
+        <div class="event-info">
+            <h2>Spring Flower Workshop</h2>
+            <p class="date">June 15, 2024</p>
+            <p>Join us for a hands-on workshop where you will learn how to create beautiful spring flower arrangements. All materials will be provided.</p>
+            <div class="event-details">
+                <p>Location: Flower Shop, Main Hall</p>
+                <p>Time: 10:00 AM - 2:00 PM</p>
+                <p>Price: $50 per person</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="event" onclick="toggleDetails(this)">
+        <img src="image/fl6.jpg" alt="Event 2" class="event-image">
+        <div class="event-info">
+            <h2>Summer Floral Festival</h2>
+            <p class="date">July 10, 2024</p>
+            <p>Celebrate the beauty of summer with a day filled with floral displays, live music, and refreshments. Bring your family and friends!</p>
+            <div class="event-details">
+                <p>Location: City Park</p>
+                <p>Time: 12:00 PM - 6:00 PM</p>
+                <p>Price: Free</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="event" onclick="toggleDetails(this)">
+        <img src="image/fl3.jpg" alt="Event 3" class="event-image">
+        <div class="event-info">
+            <h2>Autumn Bouquet Contest</h2>
+            <p class="date">October 5, 2024</p>
+            <p>Show off your creativity by participating in our autumn bouquet contest. Great prizes await the winners!</p>
+            <div class="event-details">
+                <p>Location: Flower Shop, Outdoor Area</p>
+                <p>Time: 2:00 PM - 5:00 PM</p>
+                <p>Price: $20 per participant</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+        </div>
+    </div>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Flower Shop. All rights reserved.</p>
+  </footer>
+  <script src="nav/nav.js"></script>
+</body>
+</html>
